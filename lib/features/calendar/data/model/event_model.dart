@@ -13,9 +13,9 @@ class EventModel {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
-    data['event_name'] = this.eventName;
-    data['description'] = this.description;
-    data['date'] = this.date;
+    data['event_name'] = eventName;
+    data['description'] = description;
+    data['date'] = date;
     return data;
   }
 }
