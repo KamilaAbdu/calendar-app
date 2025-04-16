@@ -1,8 +1,8 @@
 abstract class CalendarEvent {}
 
-class DateRangeSelected extends CalendarEvent {
+class DateRangeSelectedEvent extends CalendarEvent {
   final DateTime startDate;
   final DateTime endDate;
 
-  DateRangeSelected({required this.startDate, required this.endDate});
+  DateRangeSelectedEvent({required this.startDate, required this.endDate});
 }

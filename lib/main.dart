@@ -18,14 +18,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
-      providers: [
-        BlocProvider(create: (_) => CalendarBloc(apiService: DioSettings())),
-      ],
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: CalendarScreen(),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: CalendarScreen(),
     );
   }
 }
